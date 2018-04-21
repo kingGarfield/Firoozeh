@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Firoozeh</string>
+    <string name="userHintEdiText">User_Name :</string>
+    <string name="stnoHintEdiText">Student_Number :</string>
+    <string name="logInText">Login</string>
+</resources>

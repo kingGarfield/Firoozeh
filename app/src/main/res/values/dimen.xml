@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="up_and_down_size">150dp</dimen>
+    <dimen name="user_stno_width">300dp</dimen>
+    <dimen name="pading_in_text_container">10dp</dimen>
+    <dimen name="margin">20dp</dimen>
+    <dimen name="text_size">15sp</dimen>
+
+</resources>
