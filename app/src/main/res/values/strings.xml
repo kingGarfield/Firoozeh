@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Firoozeh</string>
+    <string name="stnoHintEdiText">Student_Number :</string>
+    <string name="passHintEdiText">Password :</string>
+    <string name="logInText">Login</string>
+    <string name="groupName">Firoozeh Programming Group</string>
+    <string name="isPresents">Is Presents</string>
+    <string name="studentInformation">Student Infrmation</string>
+    <string name="administrative_financial">Administrative Financial</string>
+    <string name="assessment">assessment</string>
+    <string name="do_not_insert">Please Enter All Information</string>
+</resources>

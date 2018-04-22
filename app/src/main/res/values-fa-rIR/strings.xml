@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Firoozeh</string>
+    <string name="stnoHintEdiText">شماره دانشجویی :</string>
+    <string name="passHintEdiText">رمز عبور :</string>
+    <string name="groupName">گروه برنامه نویسی فیروزه</string>
+    <string name="isPresents">تقدیم می کند</string>
+    <string name="logInText">ورود</string>
+    <string name="studentInformation">اطلاعات دانشجو</string>
+    <string name="administrative_financial">مالی اداری</string>
+    <string name="assessment">ارزشیابی</string>
+    <string name="do_not_insert">لطفا همه موارد را وارد نمایید.</string>
+</resources>

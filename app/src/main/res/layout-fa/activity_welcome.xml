@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="ir.ambaghi.firoozeh.WelcomeActivity">
+
+    <LinearLayout
+        android:id="@+id/up_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/up_border_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/welcome_border_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin"
+            android:src="@drawable/up_down_border_welcome" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/groupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:gravity="center"
+            android:padding="@dimen/pading_in_text_container"
+            android:text="@string/groupName"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_welcome" />
+
+        <TextView
+            android:id="@+id/presents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupName"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="@dimen/pading_in_text_container"
+
+            android:text="@string/isPresents"
+
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_size_welcome" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/down_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/down_border_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/welcome_border_height"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/up_down_border_welcome" />
+    </LinearLayout>
+
+</RelativeLayout>
