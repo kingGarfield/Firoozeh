@@ -5,10 +5,10 @@
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.1.1.aar/9cf4657b0f5322124e1e21753f5e0bf9/res" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/ali/programs/SDKs/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-javadoc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../programs/SDKs/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/ali/programs/SDKs/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../programs/SDKs/android-sdk/extras/android/m2repository/com/android/support/recyclerview-v7/23.1.1/recyclerview-v7-23.1.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
