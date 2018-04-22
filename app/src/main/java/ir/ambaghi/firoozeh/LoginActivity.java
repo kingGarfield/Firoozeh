@@ -34,6 +34,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(new Intent(LoginActivity.this,MenuPage.class));
                     stnoEditText.setText("");
                     passEditText.setText("");
+                    //jjhhgggh
                 }
             }
         });
