@@ -17,7 +17,6 @@
         android:layout_width="wrap_content"
         android:layout_marginTop="@dimen/margin"
         android:layout_height="@dimen/welcome_border_height"
-
         android:layout_alignParentTop="true"
         android:src="@drawable/up_down_border_welcome" />
 

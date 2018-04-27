@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".LoginActivity" />
-        <activity android:name=".MenuPage"></activity>
+        <activity android:name=".MenuPage" />
+        <activity android:name=".surveyActivity"></activity>
     </application>
 
 </manifest>

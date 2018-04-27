@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), R.string.do_not_insert,
                             Toast.LENGTH_LONG).show();
                 } // else_if(dont exist in database)
+
                 else {
                     startActivity(new Intent(LoginActivity.this,MenuPage.class));
                     stnoEditText.setText("");
