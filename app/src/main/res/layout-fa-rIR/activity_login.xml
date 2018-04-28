@@ -2,7 +2,10 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/main_bg">
+
+
 
     <ImageView
         android:id="@+id/up_border"
@@ -20,7 +23,8 @@
         android:layout_below="@id/up_border"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/margin"
-        android:textColorHint="@color/black">
+        android:textColorHint="@color/white"
+        android:theme="@style/TextLabel">
 
         <EditText
             android:id="@+id/stnoEditText"
@@ -31,8 +35,8 @@
             android:hint="@string/stnoHintEdiText"
             android:inputType="numberDecimal"
             android:padding="@dimen/pading_in_text_container"
-            android:textColor="@color/black"
-            android:textColorHint="@color/hint_color"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="@dimen/text_size"
             android:textStyle="bold" />
 
@@ -46,7 +50,8 @@
         android:layout_below="@id/stnoContainer"
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/margin"
-        android:textColorHint="@color/black">
+        android:textColorHint="@color/white"
+        android:theme="@style/TextLabel">
 
         <EditText
             android:id="@+id/passEditText"
@@ -57,8 +62,8 @@
             android:hint="@string/passHintEdiText"
             android:inputType="numberPassword"
             android:padding="@dimen/pading_in_text_container"
-            android:textColor="@color/black"
-            android:textColorHint="@color/hint_color"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:textSize="@dimen/text_size"
             android:textStyle="bold" />
 

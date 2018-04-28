@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <ImageView
+        android:id="@+id/topBorderForAnyTermInformationRowOfList"
+        android:src="@drawable/border_for_any_term_information_list"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:id="@+id/courseNameLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/topBorderForAnyTermInformationRowOfList"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/courseNameTextView"
+            android:text="@string/courseNameTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/courseName"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/numOfUnitsLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/courseNameLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/numOfUnitsTextView"
+            android:text="@string/numOfUnitsTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/numOfUnits"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/scoreLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/numOfUnitsLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:text="@string/scoreTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/score"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/scoreResultLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/scoreLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scoreResultTextView"
+            android:text="@string/scoreResultTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/scoreResult"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/scoreStatusLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/scoreResultLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/scoreStatusTextView"
+            android:text="@string/scoreStatusTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/scoreStatus"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lectureStatusLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/scoreStatusLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/lectureStatusTextView"
+            android:text="@string/lectureStatusTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lectureStatus"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/courseTypeLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/lectureStatusLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/courseTypeTextView"
+            android:text="@string/courseTypeTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/courseType"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/registrationTypeLayOut"
+        android:orientation="horizontal"
+        android:layout_below="@id/courseTypeLayOut"
+        android:layout_marginTop="@dimen/min_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:padding="@dimen/pading_in_text_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/registrationTypeTextView"
+            android:text="@string/registrationTypeTextView"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/registrationType"
+            android:text=""
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -9,4 +9,19 @@
     <string name="administrative_financial">Administrative Financial</string>
     <string name="assessment">assessment</string>
     <string name="do_not_insert">Please Enter All Information</string>
+    <string name="passed_units">Num of passed units :</string>
+    <string name="received_units">Num of received units :</string>
+    <string name="average">Average :</string>
+    <string name="num_of_term">Num of term : </string>
+    <string name="average_term_text">Avg : </string>
+    <string name="no_login">Username or Password is incurrect</string>
+    <string name="courseNameTextView">Course Name : </string>
+    <string name="numOfUnitsTextView">Num Of Units : </string>
+    <string name="scoreTextView">Score : </string>
+    <string name="scoreResultTextView">Score Result : </string>
+    <string name="scoreStatusTextView">Score Status : </string>
+    <string name="lectureStatusTextView">Lecture Status : </string>
+    <string name="courseTypeTextView">Course Type : </string>
+    <string name="registrationTypeTextView">Registration Type : </string>
+
 </resources>

@@ -9,4 +9,20 @@
     <string name="administrative_financial">مالی اداری</string>
     <string name="assessment">ارزشیابی</string>
     <string name="do_not_insert">لطفا همه موارد را وارد نمایید.</string>
+    <string name="passed_units">تعداد واحد گذرانده شده :</string>
+    <string name="received_units">تعداد واحد اخذ شده :</string>
+    <string name="average">معدل :</string>
+    <string name="num_of_term">شماره ترم : </string>
+    <string name="average_term_text">معدل :‌ </string>
+    <string name="no_login">نام کاربری یا رمز عبور اشتباه است!</string>
+    <string name="courseNameTextView">نام درس : </string>
+    <string name="numOfUnitsTextView">تعداد واحد : </string>
+    <string name="scoreTextView">نمره : </string>
+    <string name="scoreResultTextView">نتیجه نمره : </string>
+    <string name="scoreStatusTextView">وضعیت نمره : </string>
+    <string name="lectureStatusTextView">وضعیت درس : </string>
+    <string name="courseTypeTextView">نوع درس : </string>
+    <string name="registrationTypeTextView">نوع ثبت نام : </string>
+
+
 </resources>
