@@ -1,9 +1,274 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AssessmentForm">
+    android:background="@drawable/main_bg">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:id="@+id/survey_pic"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="@dimen/margin"
+        android:src="@drawable/survey_pic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/teacherNameAssessment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginEnd="@dimen/margin"
+        android:text="نام استاد"
+        android:textSize="@dimen/assessment_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/padding_in_text_container"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseNameAssessment"
+        android:layout_below="@id/teacherNameAssessment"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/margin"
+        android:text="نام استاد"
+        android:textSize="@dimen/assessment_text_size"
+        android:textColor="@color/white"
+        android:padding="@dimen/padding_in_text_container"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/assessment_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/survey_pic"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:text="@string/assessment_q1"
+        android:textColor="@color/white"
+        android:textSize="@dimen/assessment_text_size"
+        android:textStyle="bold" />
+
+
+    <RadioGroup
+        android:id="@+id/q1_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessment_q1"
+        android:layout_margin="@dimen/margin">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q1_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer1"
+            android:textColor="@color/green"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q1_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q1_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer3"
+            android:textColor="@color/text_c"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q1_answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer4"
+            android:textColor="@color/btn_bg"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextQ1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q1_radiogroup"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:onClick="onClick"
+        android:text="@string/next_question"
+        android:textSize="@dimen/text_size_button" />
+
+    <!--/////////-->
+    <TextView
+        android:id="@+id/assessment_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/survey_pic"
+        android:layout_margin="@dimen/margin"
+        android:layout_marginStart="@dimen/margin"
+        android:text="@string/assessment_q2"
+        android:textColor="@color/white"
+        android:textSize="@dimen/assessment_text_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <RadioGroup
+        android:id="@+id/q2_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessment_q2"
+        android:layout_margin="@dimen/margin"
+        android:visibility="invisible">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q2_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer1"
+            android:textColor="@color/green"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q2_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q2_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer3"
+            android:textColor="@color/text_c"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q2_answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer4"
+            android:textColor="@color/btn_bg"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q1_radiogroup"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg"
+        android:onClick="onClick"
+        android:text="@string/next_question"
+        android:textSize="@dimen/text_size_button"
+        android:visibility="invisible" />
+
+
+    <!--/////////-->
+    <TextView
+        android:id="@+id/assessment_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/survey_pic"
+        android:layout_marginStart="@dimen/margin"
+        android:text="@string/assessment_q3"
+        android:textColor="@color/white"
+        android:textSize="@dimen/assessment_text_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+    <RadioGroup
+        android:id="@+id/q3_radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/assessment_q3"
+        android:layout_margin="@dimen/margin"
+        android:visibility="invisible">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q3_answer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer1"
+            android:textColor="@color/green"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q3_answer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q3_answer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer3"
+            android:textColor="@color/text_c"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/q3_answer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_in_text_container"
+            android:text="@string/answer4"
+            android:textColor="@color/btn_bg"
+            android:textSize="@dimen/assessment_text_size"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNextQ3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/q3_radiogroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/button_bg"
+        android:onClick="onClick"
+        android:text="@string/finish_assessment"
+        android:textSize="@dimen/text_size_button"
+        android:visibility="invisible" />
+</RelativeLayout>

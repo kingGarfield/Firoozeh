@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.io.BufferedReader;
@@ -104,7 +105,7 @@ public class TermAndAvgForRowAdapter extends ArrayAdapter<TermAndAvgForRow> {
             row = inflater.inflate(getResource(), null);
             holder.setNumberOfTerm((TextView)row.findViewById(R.id.numberOfTerm));
             holder.setAverage((TextView)row.findViewById(R.id.average));
-            //holder.setStudentInformationForRow(getRowInStudentInformationList().get(position));
+            holder.setShowButton((Button)row.findViewById(R.id.showButton));
 
             row.setTag(holder);
         } else {
@@ -114,10 +115,8 @@ public class TermAndAvgForRowAdapter extends ArrayAdapter<TermAndAvgForRow> {
         holder.setTermAndAvgForRow(getTermAndAvgForRowArrayList().get(position));
         holder.getAverage().setText(holder.getTermAndAvgForRow().getTermAverage());
         holder.getNumberOfTerm().setText(holder.getTermAndAvgForRow().getTermNumber());
-
-
         final Holder finalHolder = holder;
-        row.setOnClickListener(new View.OnClickListener() {
+        holder.getShowButton().setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String stno = finalHolder.getTermAndAvgForRow().getStno();
@@ -127,9 +126,9 @@ public class TermAndAvgForRowAdapter extends ArrayAdapter<TermAndAvgForRow> {
                 i.putExtra("termNumber",termNumber);
                 activity.startActivity(i);
 
-
             }
         });
+
         return row;
     }
 
@@ -168,6 +167,7 @@ public class TermAndAvgForRowAdapter extends ArrayAdapter<TermAndAvgForRow> {
     private class Holder {
 
         private TextView numberOfTerm,average;
+        private Button showButton;
 
         private TermAndAvgForRow termAndAvgForRow = new TermAndAvgForRow();
 
@@ -181,6 +181,14 @@ public class TermAndAvgForRowAdapter extends ArrayAdapter<TermAndAvgForRow> {
 
         public TextView getNumberOfTerm() {
             return numberOfTerm;
+        }
+
+        public Button getShowButton() {
+            return showButton;
+        }
+
+        public void setShowButton(Button showButton) {
+            this.showButton = showButton;
         }
 
         public void setNumberOfTerm(TextView numberOfTerm) {

@@ -1,15 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/main_bg"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activity_any_term_information_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?colorPrimary"
+        app:subtitleTextColor="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/min_padding">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/min_margin"
+                android:layout_marginBottom="@dimen/min_margin"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
     <ListView
         android:id="@+id/any_term_list"
-        android:padding="@dimen/min_padding"
+        android:layout_below="@+id/activity_any_term_information_toolbar"
+        android:padding="@dimen/padding_in_text_container"
         android:layout_margin="@dimen/margin"
-        android:divider="@color/white"
-        android:dividerHeight="@dimen/divider_hight"
+        android:divider="@color/text_c"
+        android:dividerHeight="10dp"
         android:background="@drawable/list_border"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>

@@ -1,109 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@drawable/main_bg">
 
-    <ImageView
-        android:id="@+id/down_border"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/welcome_border_height"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/up_down_border_welcome" />
-
-    <ImageView
-        android:id="@+id/up_border"
-        android:layout_width="wrap_content"
-        android:layout_marginTop="@dimen/margin"
-        android:layout_height="@dimen/welcome_border_height"
-        android:layout_centerHorizontal="true"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
         android:layout_alignParentTop="true"
-        android:src="@drawable/up_down_border_welcome" />
+        android:background="?colorPrimary"
+        app:subtitleTextColor="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
-    <TextView
-        android:id="@+id/student_fullname"
-        android:text=""
-        android:layout_margin="@dimen/min_margin"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_below="@id/up_border"
-        android:padding="@dimen/min_padding"
-        android:textSize="@dimen/text_size"
-        android:textColor="@color/white"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/min_padding">
 
-    <TextView
-        android:id="@+id/student_stno"
-        android:text=""
-        android:layout_margin="@dimen/min_margin"
-        android:textStyle="bold"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_below="@id/student_fullname"
-        android:textSize="@dimen/text_size"
-        android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:textColor="@color/white"
-        android:padding="@dimen/min_padding"
-        android:layout_above="@id/student_information_button"
-        android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/min_margin"
+                android:text="Title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </RelativeLayout>
 
-    <ImageView
-        android:id="@+id/left_border"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@id/student_information_button"
-        android:layout_alignParentEnd="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/right_left_border" />
+    </android.support.v7.widget.Toolbar>
 
-    <ImageView
-        android:id="@+id/right_border"
-        android:layout_width="50dp"
-        android:layout_toStartOf="@id/student_information_button"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/right_left_border" />
 
     <Button
         android:id="@+id/student_information_button"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_above="@id/administrative_financial_button"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/margin"
-        style="?android:attr/borderlessButtonStyle"
-        android:textStyle="bold"
-        android:background="@drawable/button"
+        android:background="@drawable/button_bg"
         android:text="@string/studentInformation"
-        android:textSize="@dimen/text_size_button" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/studen_profile_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_above="@id/student_information_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin"
+        android:background="@drawable/button_bg"
+        android:text="@string/studentProfile"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="bold" />
+
+
+
     <Button
         android:id="@+id/administrative_financial_button"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_centerInParent="true"
-        style="?android:attr/borderlessButtonStyle"
-        android:textStyle="bold"
-        android:background="@drawable/button"
+        android:background="@drawable/button_bg"
         android:text="@string/administrative_financial"
-        android:textSize="@dimen/text_size_button" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/assessment_button"
+        style="?android:attr/borderlessButtonStyle"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
         android:layout_below="@id/administrative_financial_button"
-        android:layout_marginTop="@dimen/margin"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        style="?android:attr/borderlessButtonStyle"
-        android:background="@drawable/button"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/button_bg"
         android:text="@string/assessment"
-        android:textSize="@dimen/text_size_button" />
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/exit_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@id/assessment_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:background="@drawable/button_bg"
+        android:text="@string/exit"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="bold" />
+
 
 </RelativeLayout>

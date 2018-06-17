@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/main_bg"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/courseNameLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_in_text_container"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/min_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+        <TextView
+            android:id="@+id/courseNameInAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/text_c"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/teacherNameLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_in_text_container"
+        android:layout_below="@id/courseNameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/min_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teacherNameTextView"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+        <TextView
+            android:id="@+id/teacherNameInAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/text_c"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/courseIdLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_in_text_container"
+        android:layout_below="@id/teacherNameLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/min_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseIdTextView"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+        <TextView
+            android:id="@+id/courseIdInAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/text_c"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/classCapacityLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_in_text_container"
+        android:layout_below="@id/courseIdLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/min_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/classCapacity"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+        <TextView
+            android:id="@+id/classCapacityInAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/text_c"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/valueLayout"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_in_text_container"
+        android:layout_below="@id/classCapacityLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/min_margin"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teacherNameTextView"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+        <TextView
+            android:id="@+id/teachersNameInAvailable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/text_c"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"/>
+
+    </LinearLayout>
+    courseName
+    teacherName
+    courseId
+    classCapacity
+    value
+    presentedTime
+    pishniazCourses
+</RelativeLayout>

@@ -1,10 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".AssessmentActivity"
-    android:id="@+id/id">
+    android:background="@drawable/main_bg"
+    android:layout_alignParentTop="true">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/activityAssessmentToolbar"
+        android:background="?colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    </android.support.v7.widget.Toolbar>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityAssessmentListView"
+        android:layout_below="@id/activityAssessmentToolbar"
+        android:layout_margin="@dimen/min_margin"
+        android:divider="@color/text_c"
+        android:dividerHeight="@dimen/divider_height"
+        android:background="@drawable/list_border"></ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noDifine"
+        android:layout_below="@id/activityAssessmentToolbar"
+        android:layout_margin="@dimen/margin"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:text="@string/noDefine"
+        android:padding="@dimen/padding_in_text_container"
+        android:gravity="center"
+        android:visibility="invisible"/>
+</RelativeLayout>

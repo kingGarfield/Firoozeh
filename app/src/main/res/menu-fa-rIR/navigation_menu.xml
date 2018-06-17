@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:checkableBehavior="single">
+        <item android:title="@string/studentInformation"
+            android:id="@+id/studentInformationMenu"
+            android:icon="@drawable/student"/>
+        <item android:id="@+id/administrativeFinancialMenu"
+            android:title="@string/administrative_financial"
+            android:icon="@drawable/coin"/>
+        <item android:id="@+id/assessmentMenu"
+            android:title="@string/assessment"
+            android:icon="@drawable/assessment"
+            />
+        <item android:id="@+id/exitMenu"
+            android:title="@string/exit"
+            android:icon="@drawable/exit_to_app"
+            />
+
+    </group>
 </menu>

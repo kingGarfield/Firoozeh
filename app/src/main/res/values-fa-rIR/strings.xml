@@ -14,6 +14,9 @@
     <string name="average">معدل :</string>
     <string name="num_of_term">شماره ترم : </string>
     <string name="average_term_text">معدل :‌ </string>
+    <string name="student">دانشجو</string>
+    <string name="open">باز</string>
+    <string name="close">بسته</string>
     <string name="no_login">نام کاربری یا رمز عبور اشتباه است!</string>
     <string name="courseNameTextView">نام درس : </string>
     <string name="numOfUnitsTextView">تعداد واحد : </string>
@@ -23,6 +26,31 @@
     <string name="lectureStatusTextView">وضعیت درس : </string>
     <string name="courseTypeTextView">نوع درس : </string>
     <string name="registrationTypeTextView">نوع ثبت نام : </string>
-
-
+    <string name="exit">خروج</string>
+    <string name="show">نمایش</string>
+    <string name="welcome">خوش آمدید</string>
+    <string name="teacherNameTextView">نام استاد : </string>
+    <string name="assessment_done">نظر سنجی انجام شده است.</string>
+    <string name="noDifine">ارزشیابی در این زمان برای شما تعریف نشده است</string>
+    <string name="assessment_q1">سطح علمی استاد :</string>
+    <string name="assessment_q2"> نحوه ی برخورد استاد با دانشجو :</string>
+    <string name="assessment_q3">میزان مشارکت دادن دانشجو در مباحث کلاس :</string>
+    <string name="answer1">عالی</string>
+    <string name="answer2">خوب</string>
+    <string name="answer3">متوسط</string>
+    <string name="answer4">ضعیف</string>
+    <string name="next_question">سوال بعدی</string>
+    <string name="finish_assessment">پایان</string>
+    <string name="error_assessment_is_not_complete">نظرسنجی کامل نشده است</string>
+    <string name="select_one_item">یک مورد را انتخاب کنید.</string>
+    <string name="courseIdTextView">شماره درس : </string>
+    <string name="classCapacity">ظرفیت کلاس : </string>
+    <string name="studentProfile">پروفایل دانشجو</string>
+    <string name="firstNameTextView">نام :</string>
+    <string name="lastNameTextView">نام خانوادگی :</string>
+    <string name="nationalIdTextView">کد ملی :</string>
+    <string name="emailTextView">پست الکترونیکی :</string>
+    <string name="phoneNumberTextView">شماره تلفن :</string>
+    <string name="addressTextView">آدرس :</string>
+    <string name="fatherNameTextView">نام پدر :</string>
 </resources>

@@ -12,6 +12,9 @@
     <string name="passed_units">Num of passed units :</string>
     <string name="received_units">Num of received units :</string>
     <string name="average">Average :</string>
+    <string name="student">Student</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
     <string name="num_of_term">Num of term : </string>
     <string name="average_term_text">Avg : </string>
     <string name="no_login">Username or Password is incurrect</string>
@@ -23,5 +26,32 @@
     <string name="lectureStatusTextView">Lecture Status : </string>
     <string name="courseTypeTextView">Course Type : </string>
     <string name="registrationTypeTextView">Registration Type : </string>
-
+    <string name="decor">decor</string>
+    <string name="exit">Exit</string>
+    <string name="show">Show</string>
+    <string name="welcome">Welcome</string>
+    <string name="teacherNameTextView">Teacher\'s Name : </string>
+    <string name="assessment_done">Assessment has been done</string>
+    <string name="noDefine">The assessment is not define for you in this time</string>
+    <string name="assessment_q1">سطح علمی استاد :</string>
+    <string name="assessment_q2"> نحوه ی برخورد استاد با دانشجو :</string>
+    <string name="assessment_q3">میزان مشارکت دادن دانشجو در مباحث کلاس :</string>
+    <string name="answer1">عالی</string>
+    <string name="answer2">خوب</string>
+    <string name="answer3">متوسط</string>
+    <string name="answer4">ضعیف</string>
+    <string name="next_question">Next question</string>
+    <string name="finish_assessment">Finish</string>
+    <string name="select_one_item">Select one item</string>
+    <string name="error_assessment_is_not_complete">Assessment is not complete</string>
+    <string name="courseIdTextView">Course Id : </string>
+    <string name="classCapacity">Class Capacity : </string>
+    <string name="studentProfile">Student Profile</string>
+    <string name="firstNameTextView">نام :</string>
+    <string name="lastNameTextView">نام خانوادگی :</string>
+    <string name="nationalIdTextView">کد ملی :</string>
+    <string name="emailTextView">پست الکترونیکی :</string>
+    <string name="phoneNumberTextView">شماره تلفن :</string>
+    <string name="addressTextView">آدرس :</string>
+    <string name="fatherNameTextView">نام پدر :</string>
 </resources>

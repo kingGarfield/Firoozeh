@@ -39,7 +39,7 @@
             android:layout_centerHorizontal="true"
 
             android:gravity="center"
-            android:padding="@dimen/pading_in_text_container"
+            android:padding="@dimen/padding_in_text_container"
             android:text="@string/groupName"
             android:textColor="@color/white"
             android:textSize="@dimen/text_size_welcome" />
@@ -51,7 +51,7 @@
             android:layout_below="@id/groupName"
             android:layout_centerHorizontal="true"
             android:gravity="center"
-            android:padding="@dimen/pading_in_text_container"
+            android:padding="@dimen/padding_in_text_container"
 
             android:text="@string/isPresents"
 

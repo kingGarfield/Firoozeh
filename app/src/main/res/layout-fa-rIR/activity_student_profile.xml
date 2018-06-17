@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressP"
+        android:layout_centerInParent="true"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarProfile"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?colorPrimary"
+        app:subtitleTextColor="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <TextView
+        android:id="@+id/firstNamePTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/toolbarProfile"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/firstNameTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/firstNameP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarProfile"
+        android:layout_margin="@dimen/min_margin"
+        android:layout_toEndOf="@id/firstNamePTextView"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/lastNamePTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/firstNamePTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/lastNameTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/lastNameP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstNameP"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:layout_toEndOf="@id/lastNamePTextView"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/fatherNamePTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/lastNamePTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/fatherNameTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/fatherNameP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lastNamePTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:layout_toEndOf="@id/fatherNamePTextView"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/stnoPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/fatherNamePTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/stnoHintEdiText"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/stnoP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/stnoPTextView"
+        android:layout_below="@id/fatherNamePTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/nationalIdPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/stnoPTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/nationalIdTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/nationalIdP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/nationalIdPTextView"
+        android:layout_below="@id/stnoP"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/emailPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/nationalIdPTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/emailTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/emailPTextView"
+        android:layout_below="@id/nationalIdP"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/phoneNumberPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/emailPTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/phoneNumberTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/phoneNumberPTextView"
+        android:layout_below="@id/email"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+
+
+    <TextView
+        android:id="@+id/addressPTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/phoneNumberPTextView"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/white"
+        android:text="@string/addressTextView"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/addressPTextView"
+        android:layout_below="@id/phoneNumber"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:textColor="@color/text_c"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+</RelativeLayout>

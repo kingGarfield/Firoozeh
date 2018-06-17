@@ -5,81 +5,86 @@
     android:background="@drawable/main_bg">
 
 
-    <ImageView
-        android:id="@+id/right_border_for_list_in_student_information"
-        android:layout_width="@dimen/border_for_list_in_student_information"
-        android:layout_height="@dimen/border_for_list_in_student_information"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginTop="@dimen/margin"
-        android:src="@drawable/border_for_list_in_student_information" />
-
-    <ImageView
-        android:id="@+id/left_border_for_list_in_student_information"
-        android:layout_width="@dimen/border_for_list_in_student_information"
-        android:layout_height="@dimen/border_for_list_in_student_information"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginTop="@dimen/margin"
-        android:src="@drawable/border_for_list_in_student_information" />
-
-    <TextView
-        android:id="@+id/termNameTextView"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/margin"
-        android:layout_toEndOf="@id/right_border_for_list_in_student_information"
-        android:text="@string/num_of_term"
-        android:layout_marginEnd="@dimen/min_margin"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size"
-        android:textStyle="bold" />
-
-
-    <TextView
-        android:id="@+id/numberOfTerm"
-        android:layout_width="wrap_content"
-        android:layout_alignBaseline="@id/termNameTextView"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginTop="@dimen/margin"
-        android:layout_toEndOf="@id/termNameTextView"
-        android:text="11111"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/averageTextView"
-        android:layout_width="wrap_content"
+        android:orientation="horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/termNameTextView"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginTop="@dimen/margin"
-        android:text="@string/average_term_text"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size"
-        android:textStyle="bold" />
+        android:id="@+id/linear1"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:id="@+id/termNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/min_margin"
+            android:layout_centerHorizontal="true"
+            android:text="@string/num_of_term"
+            android:padding="@dimen/min_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/numberOfTerm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_below="@id/termNameTextView"
+            android:layout_centerHorizontal="true"
+            android:text="11111"
+            android:layout_margin="@dimen/min_margin"
+            android:textColor="@color/text_c"
+            android:padding="@dimen/min_padding"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
 
-    <TextView
-        android:id="@+id/average"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/averageTextView"
-        android:layout_marginBottom="@dimen/margin"
-        android:layout_marginEnd="@dimen/margin"
-        android:layout_marginStart="@dimen/margin"
-        android:layout_marginTop="@dimen/min_margin"
+        android:id="@+id/linear2"
+        android:layout_below="@id/linear1"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
 
+        <TextView
+            android:id="@+id/averageTextView"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/min_margin"
+            android:text="@string/average_term_text"
+
+            android:padding="@dimen/min_padding"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/min_margin"
+            android:padding="@dimen/min_padding"
+            android:layout_centerHorizontal="true"
+            android:text="17.5"
+            android:textColor="@color/text_c"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:id="@+id/showButton"
         android:layout_centerHorizontal="true"
-        android:text="17.5"
-        android:textColor="@color/white"
-        android:textSize="@dimen/text_size"
-        android:textStyle="bold" />
+        android:background="@drawable/go"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/margin"/>
+
+
+
+
 
 </RelativeLayout>

@@ -10,6 +10,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.net.HttpURLConnection;
+import java.net.URL;
+
 public class WelcomeActivity extends AppCompatActivity {
 
     TextView groupName, presents;

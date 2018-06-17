@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_in_text_container"
+    android:background="@drawable/main_bg">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:padding="@dimen/min_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/min_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teacherNameTextView"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="احمدی"
+            android:id="@+id/teachersName"
+            android:layout_marginStart="@dimen/min_margin"
+            android:textColor="@color/text_c"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:padding="@dimen/min_padding"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayout1"
+        android:layout_margin="@dimen/min_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/courseNameTextView"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="طراحی الگوریتم"
+            android:id="@+id/cName"
+            android:layout_marginStart="@dimen/min_margin"
+            android:textColor="@color/text_c"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/min_margin"
+        android:padding="@dimen/min_padding"
+        android:id="@+id/isDoeneTextView"
+        android:layout_below="@id/linearLayout2"
+        android:text="@string/assessment_done"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold"
+        android:textColor="@color/green"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/min_margin"
+        android:background="@drawable/go"
+        android:id="@+id/showAssessment"/>
+</RelativeLayout>

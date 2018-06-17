@@ -3,7 +3,10 @@ package ir.ambaghi.firoozeh;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -13,6 +16,7 @@ import Model.TermAndAvgForRow;
 
 public class StudentInformation extends AppCompatActivity {
 
+    Toolbar toolbar;
     TextView passedUnits,receivedUnits,average;
     ListView termList;
     ArrayList<String> student_avg_receive_pass = new ArrayList<>();
@@ -22,10 +26,14 @@ public class StudentInformation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_information);
+        toolbar = (Toolbar) findViewById(R.id.activity_student_information_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         passedUnits = (TextView) findViewById(R.id.passedUnits);
         receivedUnits = (TextView) findViewById(R.id.receivedUnits);
         average = (TextView) findViewById(R.id.average);
-        termList = (ListView) findViewById(R.id.termiList);
+        termList = (ListView) findViewById(R.id.termList);
 
         Intent i = getIntent();
         if(i != null) {
@@ -45,12 +53,24 @@ public class StudentInformation extends AppCompatActivity {
             }
         }
 
-        Log.v("asdfgh",termAndAvgForRows.get(0).getTermNumber());
         TermAndAvgForRowAdapter adapter = new TermAndAvgForRowAdapter(
                                 StudentInformation.this, R.layout.row_of_list_in_student_information,
                                     termAndAvgForRows);
 
         termList.setAdapter(adapter);
         adapter.notifyDataSetChanged();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if(item.getItemId() == android.R.id.home) {
+            finish();
+        }
+        return true;
     }
 }

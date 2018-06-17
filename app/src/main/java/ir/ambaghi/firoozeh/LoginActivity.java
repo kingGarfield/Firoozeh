@@ -59,15 +59,9 @@ import android.widget.Toast;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-import Data.JSONLoginParser;
 import Data.LoginHttpClient;
-import Model.Student;
 import Util.Utils;
 
 public class LoginActivity extends AppCompatActivity {
@@ -107,61 +101,7 @@ public class LoginActivity extends AppCompatActivity {
 
             }
         });
-//        login_button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (stnoEditText.getText().toString().equals("") ||
-//                        passEditText.getText().toString().equals("")) {
-//                    Toast.makeText(getApplicationContext(), R.string.do_not_insert,
-//                            Toast.LENGTH_LONG).show();
-//                } // else_if(dont exist in database)
-//
-//                else {
-//                    studentInformation = loginCheck(stnoEditText.getText().toString(),
-//                            passEditText.getText().toString());
-//                    if (studentInformation.size() > 0) {
-//                        Intent i = new Intent(LoginActivity.this, MenuPage.class);
-//                        Bundle bundle = new Bundle();
-//                        bundle.putStringArrayList("studentInformation", studentInformation);
-//                        i.putExtras(bundle);
-//                        startActivity(i);
-//                        stnoEditText.setText("");
-//                        passEditText.setText("");
-//                        LoginActivity.this.finish();
-//                    } else {
-//                        Toast.makeText(getApplicationContext(), R.string.no_login, Toast.LENGTH_LONG).show();
-//                    }
-//                }
-////                CheckLogin checkLogin = new CheckLogin();
-////                checkLogin.execute("");
-//            }
-//        });
     }
-
-//    private ArrayList<String> loginCheck(String stno, String pass) {
-//        ArrayList<String> studentInformation = new ArrayList<>();
-//        try {
-//            InputStream is = getAssets().open("files/studentsInformation.txt");
-//            InputStreamReader isr = new InputStreamReader(is);
-//            BufferedReader br = new BufferedReader(isr);
-//            String line = "";
-//            while ((line = br.readLine()) != null) {
-//                partition = line.split("-");
-//                if (stno.equals(partition[0]) && pass.equals(partition[1])) {
-//                    for (int i = 0; i < partition.length; i++) {
-//                        studentInformation.add(partition[i]);
-//                    }
-//                    break;
-//                }
-//            }
-//            is.close();
-//            isr.close();
-//            br.close();
-//        } catch (IOException e) {
-//            e.getStackTrace();
-//        }
-//        return studentInformation;
-//    }
 
     private class CheckLogin extends AsyncTask<String, Void, String> {
 
@@ -182,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
                     Log.v("messagee", message);
 
                 } catch (JSONException e) {
-                    //Toast.makeText(getApplicationContext(), "عدم اتصال به اینترنت", Toast.LENGTH_LONG).show();
+
                 }
             } else {
                 message = null;
@@ -195,6 +135,7 @@ public class LoginActivity extends AppCompatActivity {
             super.onPostExecute(message);
             String firstName = null;
             String lastName = null;
+            String token = null;
             if(message == null) {
                 Toast.makeText(getApplicationContext(), "عدم اتصال به اینترنت", Toast.LENGTH_LONG).show();
             }
@@ -204,6 +145,7 @@ public class LoginActivity extends AppCompatActivity {
                         JSONObject object = new JSONObject(data);
                         firstName = Utils.getString(object, "first name");
                         lastName = Utils.getString(object, "last name");
+                        token = Utils.getString(object, "token");
                     }catch (JSONException e) {
 
                     }
@@ -213,6 +155,7 @@ public class LoginActivity extends AppCompatActivity {
                 studentInformation.add(pass);
                 studentInformation.add(firstName);
                 studentInformation.add(lastName);
+                studentInformation.add(token);
                 Intent i = new Intent(LoginActivity.this, MenuPage.class);
                 Bundle bundle = new Bundle();
                 bundle.putStringArrayList("studentInformation", studentInformation);
